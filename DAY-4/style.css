@@ -1,0 +1,96 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .project-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .project-card {
+    flex: 1;
+  }
+  
+  /* Form Styling */
+  form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #f0f0f0;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .project-container {
+      flex-direction: column;
+    }
+  
+    section {
+      padding: 10px;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .project-container {
+      flex-direction: column;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.75rem;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+      
